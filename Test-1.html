@@ -4,6 +4,29 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <script src="Test-1.js"></script>
+  <script>
+    "use strict"
+
+    let value = prompt("Login", "");
+    // console.log(value);
+    if (value == "Admin") {
+
+      value = prompt("Password ?", "");
+
+      if (value == "I`m boss") {
+        alert("Hello!")
+      } else if (value === null) {
+        alert("Canceled");
+      } else {
+        alert("Wrong password");
+      }
+      
+    } else if (value === null){
+      alert("Canceled");
+    } else {
+      alert("I don`t know you!")
+    }
+  </script>  
+  <!-- <script src="Test-1.js"></script> -->
 </body>
 </html>
